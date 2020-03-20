@@ -122,7 +122,7 @@
       }
     },
     watch:{
-      $route (to, from){
+      $route (){
         if(!this.user) {
           this.loadLoggedUser();
         } else {
