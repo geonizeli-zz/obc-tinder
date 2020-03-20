@@ -57,7 +57,7 @@
     },
 
     watch: {
-      account(newValue, oldValue) {
+      account() {
         router.push("/profile");
       }
     },
