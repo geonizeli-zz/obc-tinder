@@ -5,7 +5,7 @@
       <swiper :options="swiperOptions" v-if="chats.length > 0">
         <swiperSlide v-for="chat in chats" :key="chat.id">
           <img :src="chat.matchee_photo_url" @click="openMenu(chat, 'chats')" />
-        </swiperSlide>    
+        </swiperSlide>
 
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
@@ -21,7 +21,7 @@
       <swiper :options="swiperOptions" v-if="matches.length > 0">
         <swiperSlide v-for="match in matches" :key="match.id">
           <img :src="match.matchee_photo_url" @click="openMenu(match, 'matches')" />
-        </swiperSlide>    
+        </swiperSlide>
 
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
@@ -56,7 +56,7 @@
     margin: 5%;
     display: inline-block;
     text-align: center;
-    
+
     img {
       width: 80%;
       height: 5rem;
